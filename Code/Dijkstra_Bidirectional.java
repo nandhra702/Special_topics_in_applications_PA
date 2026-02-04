@@ -7,6 +7,8 @@ public class Dijkstra_Bidirectional extends Graph {
 	public int numEdgesRelaxedSource;
 	public int numEdgesRelaxedTarget;
 
+	public int numEdgesRelaxed; //REQUIRED 
+
 	//we also need to maintain a global best distance which is actually the minimum one
 	int best ;
 
@@ -29,6 +31,7 @@ public class Dijkstra_Bidirectional extends Graph {
 	boolean[] closed_target = new boolean[numVertices];
 	numEdgesRelaxedSource=0;
 	numEdgesRelaxedTarget=0;
+	numEdgesRelaxed=0;
 
 	//setting the global maxima, that we aim to minimize
 	best = Integer.MAX_VALUE;
@@ -70,6 +73,10 @@ public class Dijkstra_Bidirectional extends Graph {
 			}
 			closed_source[minVertexSource] = true;
 			numEdgesRelaxedSource+=adjList.get(minVertexSource).size();
+			//Doubt why
+			numEdgesRelaxed += adjList.get(minVertexSource).size();
+
+
 			for(Edge adjEdgeSource : adjList.get(minVertexSource)){
 				int adjVertexSource = adjEdgeSource.dest;
 				if(!closed_source[adjVertexSource]){
@@ -87,8 +94,9 @@ public class Dijkstra_Bidirectional extends Graph {
 				best = Math.min(best,distance_source[minVertexSource] + distance_target[minVertexSource]);
 			}
 
-			/////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////////////////////////////
 			//NOW WE DO FROM THE OTHER SIDE.
+			//WE DO IT ON THE REVERSED ADJACENCY LIST
 			Element minELementTarget = pq_target.remove();
 			int minVertexTarget = minELementTarget.item;
 			//as now, we move in the opposite direction 
@@ -99,14 +107,14 @@ public class Dijkstra_Bidirectional extends Graph {
 		//	break;
 		//	}
 
-
-
 			if(closed_target[minVertexTarget]){
 				continue;
 			}
 			closed_target[minVertexTarget] = true;
-			numEdgesRelaxedTarget+=adjList.get(minVertexTarget).size();
-			for(Edge adjEdgeTarget : adjList.get(minVertexTarget)){
+			numEdgesRelaxedTarget+=revAdjList.get(minVertexTarget).size();
+			//doubt why
+			numEdgesRelaxed += revAdjList.get(minVertexTarget).size();
+			for(Edge adjEdgeTarget : revAdjList.get(minVertexTarget)){
 				int adjVertexTarget = adjEdgeTarget.dest;
 				if(!closed_target[adjVertexTarget]){
 					int dist_T = distance_target[minVertexTarget]+ adjEdgeTarget.weight;
@@ -130,9 +138,10 @@ public class Dijkstra_Bidirectional extends Graph {
 
 			}
 
+		/*
 			if (pq_source.peek().priority + pq_target.peek().priority >= best) {
    				break;
-			}
+			}*/
 
 
 

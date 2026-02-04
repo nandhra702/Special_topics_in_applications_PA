@@ -6,9 +6,9 @@ import java.util.*;
 
 public class Test {
 
-	static final String DATA_FOLDER = "Data/";
-	static final String GRID_LANDMARK_FOLDER =  "LandmarksGrid/";
-	static final String RANDOM_LANDMARK_FOLDER = "LandmarksRandom/";
+	static final String DATA_FOLDER = "../Data/";
+	static final String GRID_LANDMARK_FOLDER =  "../LandmarksGrid/";
+	static final String RANDOM_LANDMARK_FOLDER = "../LandmarksRandom/";
 
 	static final int NUM_PAIRS = 25;
 	static final int NUM_GRID_SIZES = 5;
