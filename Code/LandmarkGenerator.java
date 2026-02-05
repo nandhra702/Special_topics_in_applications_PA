@@ -1,6 +1,5 @@
 import java.io.*;
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 
@@ -13,6 +12,30 @@ public class LandmarkGenerator {
     }
 
     private static void precomputeLandmarkDistances(Graph g, String fromLandmarkPath, String toLandmarkPath, HashSet<Integer> landmarks) throws IOException { // complete this function
+     
+     Dijkstra_SSSP dijkstra_sssp_object = new Dijkstra_SSSP(g); //this is my new object
+     int[][] matrix = new int[landmarks.size()][g.numVertices];
+     int rowIndex=0;
+
+    
+    for(int landmark :landmarks){
+        //iterate through the landmarks. For each one, we apply dijsktras algo:
+        int[] distances_from_landmark = dijkstra_sssp_object.execute(landmark);
+       
+
+        
+        for (int v = 0; v < g.numVertices; v++) {
+            matrix[rowIndex][v] = distances_from_landmark[v];
+        }
+
+        rowIndex++;
+    }
+
+    // 4. Write distances to file
+    LandmarkReaderWriter.writeDistances(matrix,landmarks.size(),g.numVertices,
+            fromLandmarkPath
+    );
+
     }
 
     /**

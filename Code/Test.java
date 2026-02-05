@@ -167,10 +167,10 @@ public class Test {
 		Graph g = loadGraph(regionIndex);
 
 		/**
-		 * The generate calls should be executed once per region to ensure the landmarks are created.
+		 * The generate  List<Integer> row = new ArrayList<>();calls should be executed once per region to ensure the landmarks are created.
 		 * Then, comment out the calls.
 		 */
-//		generateRandomLandmarks(regionIndex, g);
+	generateRandomLandmarks(regionIndex, g);
 //		generateGridLandmarks(regionIndex, g);
 
 		compare(regionIndex, g);
