@@ -1,0 +1,34 @@
+Loading Colorado...Done!
+
+Creating 4 random landmarks for Colorado...Done!
+Creating 9 random landmarks for Colorado...Done!
+Creating 16 random landmarks for Colorado...Done!
+Creating 25 random landmarks for Colorado...Done!
+Creating 36 random landmarks for Colorado...Done!
+
+Creating 4 grid landmarks for Colorado...Done!
+Creating 9 grid landmarks for Colorado...Done!
+Creating 16 grid landmarks for Colorado...Done!
+Creating 25 grid landmarks for Colorado...Done!
+Creating 36 grid landmarks for Colorado...Done!
+
+Testing with 25 source-target pairs for Colorado
+
+P2P: Avg. Time = 91.04, Avg. no. of edges relaxed = 617773.0
+Bi-directional: Avg. Time = 346.12, Avg. no. of edges relaxed = 2045029.0
+Euclidean: Avg. Time = 105.96, Avg. no. of edges relaxed = 617773.0
+
+Grid Landmark(4): Avg. Time = 21.32, Avg. no. of edges relaxed = 158260.04
+Random Landmark(4): Avg. Time = 23.44, Avg. no. of edges relaxed = 165380.92
+
+Grid Landmark(9): Avg. Time = 44.32, Avg. no. of edges relaxed = 280545.28
+Random Landmark(9): Avg. Time = 11.32, Avg. no. of edges relaxed = 68761.88
+
+Grid Landmark(16): Avg. Time = 11.2, Avg. no. of edges relaxed = 75956.32
+Random Landmark(16): Avg. Time = 8.76, Avg. no. of edges relaxed = 40310.28
+
+Grid Landmark(25): Avg. Time = 8.6, Avg. no. of edges relaxed = 59725.12
+Random Landmark(25): Avg. Time = 10.88, Avg. no. of edges relaxed = 39826.88
+
+Grid Landmark(36): Avg. Time = 8.64, Avg. no. of edges relaxed = 50447.76
+Random Landmark(36): Avg. Time = 11.52, Avg. no. of edges relaxed = 35254.12

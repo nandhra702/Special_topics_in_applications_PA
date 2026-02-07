@@ -163,7 +163,7 @@ public class Test {
 		// 1: "Colorado"
 		// 2: "NorthWest"
 		// 3: "California"
-		int regionIndex = 0;
+		int regionIndex = 3;
 		Graph g = loadGraph(regionIndex);
 
 		/**
@@ -171,7 +171,7 @@ public class Test {
 		 * Then, comment out the calls.
 		 */
 	generateRandomLandmarks(regionIndex, g);
-//		generateGridLandmarks(regionIndex, g);
+	generateGridLandmarks(regionIndex, g);
 
 		compare(regionIndex, g);
 	}

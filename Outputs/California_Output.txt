@@ -1,0 +1,34 @@
+Loading California...Done!
+
+Creating 4 random landmarks for California...Done!
+Creating 9 random landmarks for California...Done!
+Creating 16 random landmarks for California...Done!
+Creating 25 random landmarks for California...Done!
+Creating 36 random landmarks for California...Done!
+
+Creating 4 grid landmarks for California...Done!
+Creating 9 grid landmarks for California...Done!
+Creating 16 grid landmarks for California...Done!
+Creating 25 grid landmarks for California...Done!
+Creating 36 grid landmarks for California...Done!
+
+Testing with 25 source-target pairs for California
+
+P2P: Avg. Time = 233.24, Avg. no. of edges relaxed = 2193617.6
+Bi-directional: Avg. Time = 1175.36, Avg. no. of edges relaxed = 8977578.0
+Euclidean: Avg. Time = 316.36, Avg. no. of edges relaxed = 2193617.6
+
+Grid Landmark(4): Avg. Time = 154.12, Avg. no. of edges relaxed = 1196911.36
+Random Landmark(4): Avg. Time = 70.04, Avg. no. of edges relaxed = 575916.48
+
+Grid Landmark(9): Avg. Time = 101.4, Avg. no. of edges relaxed = 824376.92
+Random Landmark(9): Avg. Time = 45.56, Avg. no. of edges relaxed = 322096.96
+
+Grid Landmark(16): Avg. Time = 74.08, Avg. no. of edges relaxed = 592869.24
+Random Landmark(16): Avg. Time = 41.04, Avg. no. of edges relaxed = 223903.72
+
+Grid Landmark(25): Avg. Time = 56.8, Avg. no. of edges relaxed = 379597.12
+Random Landmark(25): Avg. Time = 36.2, Avg. no. of edges relaxed = 154831.2
+
+Grid Landmark(36): Avg. Time = 41.28, Avg. no. of edges relaxed = 262748.08
+Random Landmark(36): Avg. Time = 35.16, Avg. no. of edges relaxed = 136800.68

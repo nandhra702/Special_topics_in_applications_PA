@@ -1,0 +1,34 @@
+Loading NorthWest...Done!
+
+Creating 4 random landmarks for NorthWest...Done!
+Creating 9 random landmarks for NorthWest...Done!
+Creating 16 random landmarks for NorthWest...Done!
+Creating 25 random landmarks for NorthWest...Done!
+Creating 36 random landmarks for NorthWest...Done!
+
+Creating 4 grid landmarks for NorthWest...Done!
+Creating 9 grid landmarks for NorthWest...Done!
+Creating 16 grid landmarks for NorthWest...Done!
+Creating 25 grid landmarks for NorthWest...Done!
+Creating 36 grid landmarks for NorthWest...Done!
+
+Testing with 25 source-target pairs for NorthWest
+
+P2P: Avg. Time = 190.12, Avg. no. of edges relaxed = 1155105.56
+Bi-directional: Avg. Time = 1164.84, Avg. no. of edges relaxed = 5531786.96
+Euclidean: Avg. Time = 250.36, Avg. no. of edges relaxed = 1155105.56
+
+Grid Landmark(4): Avg. Time = 54.88, Avg. no. of edges relaxed = 303439.12
+Random Landmark(4): Avg. Time = 29.44, Avg. no. of edges relaxed = 167754.4
+
+Grid Landmark(9): Avg. Time = 53.2, Avg. no. of edges relaxed = 290216.56
+Random Landmark(9): Avg. Time = 24.6, Avg. no. of edges relaxed = 125561.4
+
+Grid Landmark(16): Avg. Time = 54.6, Avg. no. of edges relaxed = 296265.56
+Random Landmark(16): Avg. Time = 19.36, Avg. no. of edges relaxed = 79873.0
+
+Grid Landmark(25): Avg. Time = 33.64, Avg. no. of edges relaxed = 158493.0
+Random Landmark(25): Avg. Time = 24.76, Avg. no. of edges relaxed = 80296.6
+
+Grid Landmark(36): Avg. Time = 24.64, Avg. no. of edges relaxed = 102937.32
+Random Landmark(36): Avg. Time = 24.72, Avg. no. of edges relaxed = 68763.96
