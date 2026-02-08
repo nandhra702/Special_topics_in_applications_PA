@@ -16,8 +16,8 @@ public class AStar_Euclidean extends AStar {
 	Vertex tCoord = coordinates.get(target);
 
 
-	double xhalf = Math.pow(sCoord.x-tCoord.y, 2);
-    double yhalf = Math.pow(sCoord.y-tCoord.y,2);
+	double xhalf = sCoord.x-tCoord.x;
+    double yhalf = sCoord.y-tCoord.y;
 
     return (int) Math.sqrt(xhalf * xhalf + yhalf * yhalf);
 	//we return integer because this function is defined to return an integer
